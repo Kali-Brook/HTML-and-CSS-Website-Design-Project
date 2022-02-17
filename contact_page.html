@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header_01">
+        <div>
+            <nav>
+                <a href="index.html"><img src="images/ae_coder_x_logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-bars" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about_page.html">ABOUT</a></li>
+                        <li><a href="#explore_assignment_list">ASSIGNMNENTS</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="assignment_01.html">Assignment One</a></li>
+                                    <li><a href="assignment_02.html">Assignment Two</a></li>
+                                    <li><a href="assignment_03.html">Assignment Three</a></li>
+                                    <li><a href="assignment_04.html">Assignment Four</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact_page.html" class="active">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Somalia">Somalia</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Mozabique">Mozabique</option>
+            <option value="Morocco">Morocco</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Democratic Ripublic of Congo">Democratic Ripublic of Congo</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+<!--         
+   <main>
+        <form class="contact" method="post" action="">
+            <h3>Contact From</h3>
+            <input type="email" placeholder="your email">
+            <input type="mailto:abelseyoum58@gmail.com" placeholder="subject">
+            <textarea placeholder="details"></textarea>
+            <input type="submit" value="comment">
+            <button>Contact</button>    
+        </form>
+    </main>
+-->
+</body>
+</html>
